@@ -1,7 +1,7 @@
 /* 菜單 */
 #products > div {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 40% 60%;
 }
 
 #products .pic img {
@@ -26,7 +26,7 @@
 }
 
 #products .text h1 {
-  padding: 10px 0;
+  padding: 0px 0;
 }
 
 #products .text p {
@@ -36,15 +36,18 @@
 }
 /* 元素內要選取變動的地方:nth-child(第幾項) */
 /* 若想選擇多項可依照奇數偶數輸入 奇數:odd 偶數:even */
-#products > div:nth-child(2) {
+#products > div:nth-of-type(2) {
   grid-template-areas: "pic text";
+  grid-template-columns: 60% 40%;
   
 }
 /* grid-area可將區塊分為小區塊命名，最後在於區塊如上方 grid-template-areas: "pic text" 輸入順序 */
-#products > div:nth-child(2) .text{
+#products > div:nth-of-type(2) .text{
   grid-area: text;
+  padding: 10px 30px;
+  padding-top: 80px;
 }
-#products > div:nth-child(2) .pic{
+#products > div:nth-of-type(2) .pic{
   grid-area: pic;
 }
 
