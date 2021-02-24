@@ -1,13 +1,19 @@
 /* 菜單 */
+#products > div {
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+#products .pic img {
+  width: 100%;
+}
+
 #products {
   width: 800 px;
   margin: 0 auto;
 }
 
-#products {
-  display: grid;
-  grid-template-columns: 60% 40%;
-}
+
 
 #products .pic img {
   width: 100%;
@@ -32,7 +38,7 @@
 /* 若想選擇多項可依照奇數偶數輸入 奇數:odd 偶數:even */
 #products > div:nth-child(2) {
   grid-template-areas: "pic text";
-  grid-template-columns: 60% 90%;
+  
 }
 /* grid-area可將區塊分為小區塊命名，最後在於區塊如上方 grid-template-areas: "pic text" 輸入順序 */
 #products > div:nth-child(2) .text{
