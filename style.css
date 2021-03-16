@@ -1,67 +1,31 @@
-/* 菜單 */
-#products > div {
-  display: grid;
-  grid-template-columns: 40% 60%;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Overpass&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 微軟正黑體;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
-#products .pic img {
-  width: 100%;
+.heading {
+  font-size: 36px !important;
+  font-family: "Ubuntu", serif !important;
+  letter-spacing: 3px;
+  padding-left: 3px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  background-color: #383838;
+  color: white;
 }
 
-#products {
-  width: 800 px;
-  margin: 0 auto;
+.food-type {
+  font-size: 26px;
+  font-weight: 900;
 }
 
-
-
-#products .pic img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
+.food-name {
+  font-size: 18px;
 }
-
-#products .text{
-  padding: 100px 20px 0 0;
-}
-
-#products .text h1 {
-  padding: 0px 0;
-}
-
-#products .text p {
-  width: 300px;
-  line-height: 2;
-  padding-bottom: 10px;
-}
-/* 元素內要選取變動的地方:nth-child(第幾項) */
-/* 若想選擇多項可依照奇數偶數輸入 奇數:odd 偶數:even */
-#products > div:nth-of-type(2) {
-  grid-template-areas: "pic text";
-  grid-template-columns: 60% 40%;
-  
-}
-/* grid-area可將區塊分為小區塊命名，最後在於區塊如上方 grid-template-areas: "pic text" 輸入順序 */
-#products > div:nth-of-type(2) .text{
-  grid-area: text;
-  padding: 10px 30px;
-  padding-top: 80px;
-}
-#products > div:nth-of-type(2) .pic{
-  grid-area: pic;
-}
-
-/* 按鈕樣式 */
-.button {
-  padding: 8px 30px;
-  border: 1px solid #000000;
-  color: #000000;
-  transition: 0.5s;
-
-}
-.button:hover {
-  background: #000000;
-  color: #fff
-}
-
-
+/*# sourceMappingURL=style.css.map */
