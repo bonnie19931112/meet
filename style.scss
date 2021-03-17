@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Overpass&display=swap');
+$color-gray: rgb(71, 71, 71);
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -7,15 +8,27 @@
     font-family: 微軟正黑體;
     box-sizing: border-box;
 }
-
-.heading {
+.heading-zh {
     font-size: 36px !important;
     //transition: 0.5s !important; 
-    font-family: "Ubuntu", serif !important;
+    font-weight: 800;
+    letter-spacing: 5px;
+    padding-left: 3px;
+    padding-top: 20px;
+    padding-bottom: -50px;
+    margin-bottom: 0;
+    text-align: center;
+    background-color: rgb(56, 56, 56);
+    color: white;
+}
+.heading-eng {
+    font-size: 36px !important;
+    //transition: 0.5s !important; 
+    font-family: "Roboto Slab", serif !important;
     letter-spacing: 3px;
     padding-left: 3px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 0px;
+    padding-bottom: 20px;
     text-align: center;
     background-color: rgb(56, 56, 56);
     color: white;
@@ -32,4 +45,6 @@
 }
 .food-name {
     font-size: 18px;
+    font-weight: 700;
+    color: $color-gray;
 }
