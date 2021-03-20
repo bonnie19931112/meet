@@ -40,11 +40,13 @@ $color-gray: rgb(71, 71, 71);
 
 //menu 
 .food-type {
+    letter-spacing: 5px;
     font-size: 26px;
     font-weight: 900;
 }
 .food-name {
-    font-size: 18px;
+    line-height: 33px;
+    font-size: 20px;
     font-weight: 700;
     color: $color-gray;
 }

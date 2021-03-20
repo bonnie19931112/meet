@@ -1,147 +1,155 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu | 菜單</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | 菜單</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 </head>
+
 <body>
-    
-    <!-- 導覽列 -->
-    <div>
-      <h1 class="heading-zh">[ 菜單 ]</h1>
-      <h1 class="heading-eng"> menu</h1>
+
+  <!-- 導覽列 -->
+  <div>
+    <h1 class="heading-zh">[ 菜單 ]</h1>
+    <h1 class="heading-eng"> menu</h1>
+  </div><br>
+
+  <!-- Sandwiches -->
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <img src="./images/sandwiches-min.jpg" class="d-block w-100 rounded-lg shadow-lg" alt="..">
+        <!-- <img src="https://fakeimg.pl/200x100/?retina=1&text=圖一&font=noto" class="d-block w-100" alt="..."> -->
+      </div>
+      <div class="col">
+        <h2 class="food-type">"手做三明治" <br>sandwiches</h2>
+        <p>內含生菜、洋蔥、番茄，不加可先告知</p>
+        <hr>
+        <h3 class="food-name">黃金沙拉 99</h3>
+        <p>特製爆漿蛋沙拉</p><br>
+        <h3 class="food-name">芋泥肉鬆 99</h3>
+        <p>綿密芋泥肉鬆</p><br>
+        <h3 class="food-name">花生培根厚蛋燒 129</h3>
+        <p>手工烘蛋、培根、濃厚花生醬</p><br>
+        <h3 class="food-name">法式油醋嫩雞 129</h3>
+        <p>低脂雞胸、油醋醬、芥末籽</p><br>
+        <h3 class="food-name">塔塔南蠻雞 159</h3>
+        <p>塔塔醬、南蠻雞</p><br>
+        <h3 class="food-name">費城起司牛肉 159</h3>
+        <p>牛肉、蘑菇、起司、紅酒醬</p><br>
+        <h3>+29元｜附紅茶 or 綠茶
+          <br>
+          +59元｜附沙拉 or 主廚濃湯
+        </h3>
+      </div>
     </div>
-
-    <!-- Sandwiches -->
-    <div class="container">
-        <div class="row">
-          <div class="col">
-            <img src="https://fakeimg.pl/200x100/?retina=1&text=圖一&font=noto" class="d-block w-100" alt="...">
-          </div>
-          <div class="col">
-            <h2 class="food-type">手做三明治 <br>sandwiches</h2>
-            <p>內含生菜、洋蔥、番茄，不加可先告知</p>
-            <hr>
-            <h3 class="food-name">黃金沙拉     99</h3>
-            <p>特製爆漿蛋沙拉</p><br>
-            <h3 class="food-name">芋泥肉鬆     99</h3>
-            <p>綿密芋泥肉鬆</p><br>
-            <h3 class="food-name">花生培根厚蛋燒     129</h3>
-            <p>手工烘蛋、培根、濃厚花生醬</p><br>
-            <h3 class="food-name">法式油醋嫩雞     129</h3>
-            <p>低脂雞胸、油醋醬、芥末籽</p><br>
-            <h3 class="food-name">塔塔南蠻雞     159</h3>
-            <p>塔塔醬、南蠻雞</p><br>
-            <h3 class="food-name">費城起司牛肉     159</h3>
-            <p>牛肉、蘑菇、起司、紅酒醬</p><br>
-            <h3>+29元｜附紅茶 or 綠茶
-                <br>
-                +59元｜附沙拉 or 主廚濃湯
-            </h3>
-          </div>
-        </div>
-        <br>
+    <br>
     <!-- 燉肉 沙拉及湯品 -->
-    <div class="container">
-        <div class="row">
-          <div class="col">
-              <h2 class="food-type">燉肉<br>stew</h2>
-              <hr>
-              <h3 class="food-name">歐風果香咖哩     189</h3>
-              <p>附米飯、唐揚雞、時蔬、水煮蛋</p><br>
-              <h3 class="food-name">墨西哥辣焗香腸     199</h3>
-              <p>附起司軟法、炒菇、時蔬、水煮蛋</p><br>
-              <h3 class="food-name">紅酒燉牛肉     239</h3>
-              <p>附米飯、炒菇、時蔬、水煮蛋</p><br>
-                
-              <h2 class="food-type">沙拉<br>salad</h2>
-              <hr>
-              <h3 class="food-name">經典優格沙拉     99</h3>
-              <br>
-              <h3 class="food-name">和風嫩雞沙拉     129</h3>
-              <br>
-
-              <h2 class="food-type">湯品<br>soup</h2>
-              <hr>
-              <h3 class="food-name">主廚濃湯     79</h3>
-              </div>
-              <div class="col">
-                <img src="https://fakeimg.pl/200x100/?retina=1&text=圖一&font=noto" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <br>
-    <!-- DRINKS -->
     <div class="container">
       <div class="row">
         <div class="col">
-          <img src="https://fakeimg.pl/200x100/?retina=1&text=圖一&font=noto" class="d-block w-100" alt="...">
-        </div>
-        <div class="col">
-          <h2 class="food-type">手工烘焙 <br>hardbaked</h2>
-          <p>每周二、四、六供應</p>
+          <h2 class="food-type">"燉肉"<br>stew</h2>
+          <hr>
+          <h3 class="food-name">歐風果香咖哩 189</h3>
+          <p>附米飯、唐揚雞、時蔬、水煮蛋</p><br>
+          <h3 class="food-name">墨西哥辣焗香腸 199</h3>
+          <p>附起司軟法、炒菇、時蔬、水煮蛋</p><br>
+          <h3 class="food-name">紅酒燉牛肉 239</h3>
+          <p>附米飯、炒菇、時蔬、水煮蛋</p><br>
+
+          <h2 class="food-type">"沙拉"<br>salad</h2>
           <hr>
           <h3 class="food-name">
-            伯爵紅茶司康     50<br>
-            巧克力司康     55 <br>
-            果乾司康     55 <br>
-          </h3><br>
+            經典優格沙拉 99
+            和風嫩雞沙拉 129</h3>
+          <br>
 
-          <h2 class="food-type">點心 <br>snack</h2><hr>
-          <h3 class="food-name">
-            爆漿地瓜球     60 <br>
-            洋蔥圈     60 <br>
-            雞塊     65 <br>
-            黃金堂揚雞     65 <br>
-            起司肉醬脆薯 120 <br>
-            歡聚大拼盤 180 <br>
-          </h3><br>
-
-          <h2 class="food-type">咖啡 <br>coffee</h2><hr>
-          <h3 class="food-name">
-            美式咖啡    60 <br>
-            拿鐵     80 <br>
-            焦糖瑪奇朵     100 <br>
-            榛果咖啡     100 <br>
-            摩卡咖啡 100 <br>
-          </h3>
-          <h2 class="food-type">點心 <br>snack</h2><hr>
-          <h3 class="food-name">
-            爆漿地瓜球     60 <br>
-            洋蔥圈     60 <br>
-            雞塊     65 <br>
-            黃金堂揚雞     65 <br>
-            起司肉醬脆薯 120 <br>
-            歡聚大拼盤 180 <br>
-          </h3><br>
-
-          <h2 class="food-type">特調 <br>Drink</h2><hr>
-          <h3 class="food-name">
-            遇見紅茶    50 <br>
-            清香綠茶     50 <br>
-            鮮奶茶     70 <br>
-            阿華田牛奶    70 <br>
-            焦糖牛奶 90 <br>
-            榛果牛奶 90 <br>
-            日式玄米茶(熱)    90 <br>
-            野莓酒室茶(熱)     90 <br>
-            香甜柚子茶     100 <br>
-            藍莓氣泡(冰)    110 <br>
-            紅莓接骨木氣泡(冰) 110 <br>
-            蜂蜜檸檬氣泡(冰) 110 <br>
-          </h3>
+          <h2 class="food-type">"湯品"<br>soup</h2>
+          <hr>
+          <h3 class="food-name">主廚濃湯 79</h3>
+        </div>
+        <div class="col">
+          <img src="./images/salad-min.jpg" class="d-block w-100 rounded-lg shadow-lg" alt="...">
         </div>
       </div>
       <br>
+      <!-- DRINKS -->
+      <div class="container">
+        <div class="row">
+          <div class="col" >
+            <img src="./images/dessert-min.jpg" class="d-block w-100 rounded-lg shadow-lg" alt="...">
+          </div>
+          <div class="col">
+            <h2 class="food-type">"手工烘焙" <br>hardbaked</h2>
+            <p>每周二、四、六供應</p>
+            <hr>
+            <h3 class="food-name">
+              伯爵紅茶司康 50<br>
+              巧克力司康 55 <br>
+              果乾司康 55 <br>
+            </h3><br>
+            <h2 class="food-type">"咖啡" <br>coffee</h2>
+            <hr>
+            <h3 class="food-name">
+              美式咖啡 60 <br>
+              拿鐵 80 <br>
+              焦糖瑪奇朵 100 <br>
+              榛果咖啡 100 <br>
+              摩卡咖啡 100 <br>
+            </h3><br>
+          </div>
+        </div>
+        <br>
 
-    <!-- 輪播需JQuery至上 https://developers.google.com/speed/libraries#jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- 輪播需slick https://github.com/kenwheeler/slick/-->
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="./main.js"></script>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h2 class="food-type">"點心" <br>snack</h2>
+              <hr>
+              <h3 class="food-name">
+                爆漿地瓜球 60 <br>
+                洋蔥圈 60 <br>
+                雞塊 65 <br>
+                黃金堂揚雞 65 <br>
+                起司肉醬脆薯 120 <br>
+                歡聚大拼盤 180 <br>
+              </h3><br>
+
+              <h2 class="food-type">"特調" <br>drink</h2>
+              <hr>
+              <h3 class="food-name">
+                遇見紅茶 50 <br>
+                清香綠茶 50 <br>
+                鮮奶茶 70 <br>
+                阿華田牛奶 70 <br>
+                焦糖牛奶 90 <br>
+                榛果牛奶 90 <br>
+                日式玄米茶(熱) 90 <br>
+                野莓酒室茶(熱) 90 <br>
+                香甜柚子茶 100 <br>
+                藍莓氣泡(冰) 110 <br>
+                紅莓接骨木氣泡(冰) 110 <br>
+                蜂蜜檸檬氣泡(冰) 110 <br>
+              </h3>
+            </div>
+            <div class="col">
+              <img src="./images/fries-min.jpg" class="d-block w-100 h-200 rounded-lg shadow-lg" alt="...">
+            </div>
+          </div>
+          <br>
+
+          <!-- 輪播需JQuery至上 https://developers.google.com/speed/libraries#jquery -->
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+          <!-- 輪播需slick https://github.com/kenwheeler/slick/-->
+          <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+          <script src="./main.js"></script>
 </body>
+
 </html>
