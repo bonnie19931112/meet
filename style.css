@@ -197,4 +197,17 @@ nav #link a:hover {
   font-weight: 700;
   color: #3a3a3a;
 }
+
+footer {
+  background: #3a3a3a;
+  padding: 50px 0;
+  text-align: center;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  padding: 20px 0;
+  margin: auto 25px;
+}
 /*# sourceMappingURL=style.css.map */
