@@ -1,4 +1,9 @@
-$color-gray: rgb(71, 71, 71);
+$color-gray: rgb(58, 58, 58);
+$box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+$color-white: rgb(255, 255, 255);
+$color-yellow:  rgb(252, 186, 5);
+$tablet: 1024px;          //平板尺寸
+$mobile: 767px;           //手機尺寸
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
 
@@ -36,7 +41,7 @@ nav {
     text-align: center;
     background: $color-gray;
     padding: 35px 0;
-    color: $color-darkgray;
+    color: $color-white !important;
     // 固定導覽列
     position: fixed;
     z-index: 3;
@@ -62,8 +67,6 @@ nav {
 
         // 滑入後 顯示裡面的 子分頁元素
         &:hover .sub-link{
-            // display: block;  //第一種作法
-            // 第二種作法
             transform: scale(1);
         }
     }
@@ -93,7 +96,7 @@ nav {
         }
 
         a {
-            color: $color-darkgray;
+            color: $color-white;
             text-decoration: none;
             font-size: 16px;
             padding: 0 60px;
@@ -103,7 +106,7 @@ nav {
             vertical-align: 10px;
 
             &:hover {
-            color: $color-gray;
+            color: $color-white;
             transform: scale(1.2);
             }
         }
@@ -135,34 +138,21 @@ nav {
 .logo {
     font-size: 36px !important;
     transition: 0.5s !important; 
-    font-family: "Bodoni Moda", serif;
+    font-family:  "Roboto Slab", serif;
     letter-spacing: 3px;
     padding-left: 3px;
+    color: $color-white;
 
     &:hover {
         transform: scale(1.3) !important;
     }
 
     span {
-        font-family:  "Bodoni Moda", serif;
+        font-family: "Roboto Slab", serif;
         vertical-align: 3px;
         font-size: 30px;
     }
 }
-
-#banner {
-    .slick-prev {
-        left: 50px;
-        z-index: 2;
-    }
-    .slick-next {
-        right: 50px;
-        z-index: 2;
-    }
-    .slick-dots {
-        bottom: 50px;
-        z-index: 2;
-    }
 
 
 
@@ -172,7 +162,7 @@ nav {
     font-weight: 800;
     letter-spacing: 5px;
     padding-left: 3px;
-    padding-top: 20px;
+    padding-top: 190px;
     padding-bottom: -50px;
     margin-bottom: -5px;
     text-align: center;
@@ -188,7 +178,7 @@ nav {
     padding-top: 0px;
     padding-bottom: 20px;
     text-align: center;
-    color: rgb(252, 186, 5);
+    color: $color-yellow;
 
     //&:hover {
         //transform: scale(1.3) !important;
@@ -206,4 +196,4 @@ nav {
     font-size: 20px;
     font-weight: 700;
     color: $color-gray;
-}}
+}
