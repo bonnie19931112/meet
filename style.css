@@ -9,28 +9,27 @@
 }
 
 .heading-zh {
-  font-size: 36px !important;
+  font-size: 45px !important;
   font-weight: 800;
   letter-spacing: 5px;
   padding-left: 3px;
   padding-top: 20px;
   padding-bottom: -50px;
-  margin-bottom: 0;
+  margin-bottom: -5px;
   text-align: center;
-  background-color: #383838;
-  color: white;
+  color: #474746;
 }
 
 .heading-eng {
-  font-size: 36px !important;
+  font-size: 35xpx !important;
+  letter-spacing: 5px !important;
   font-family: "Roboto Slab", serif !important;
   letter-spacing: 3px;
   padding-left: 3px;
   padding-top: 0px;
   padding-bottom: 20px;
   text-align: center;
-  background-color: #383838;
-  color: white;
+  color: #fcba05;
 }
 
 .food-type {
