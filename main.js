@@ -33,7 +33,36 @@ $("#works").slick({
 });
 
 
-// AOS.init({
-//     duration: 1200,
-//   })
-  
+// scroll to element
+$("a").each(function (index, element) {
+
+    var target = $(this).attr("data-st-target");
+    var duration = $(this).attr("data-st-duration");
+    var offsetTop = $(this).attr("data-st-offset");
+
+
+
+    var offset = $("#" + target).offset();
+    var top = offset.top;
+
+
+    if (offsetTop) top -= offsetTop;
+
+
+    
+    $(this).click(function (e) { 
+        e.preventDefault();
+
+        $("html").stop().animate({
+            scrollTop: top
+        }, parseInt(duration));
+        
+    });
+});
+
+$("html").on("mousewheel", function () {
+    $("html").stop()
+});
+
+var arrow = $("#arrow");
+arrow.fadeOut();

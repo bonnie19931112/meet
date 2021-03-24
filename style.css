@@ -9,7 +9,7 @@
 }
 
 #menu {
-  background-image: url(./img/menu.png);
+  background-image: url(./images/menu.png);
   width: 32px;
   height: 32px;
   cursor: pointer;
@@ -19,7 +19,7 @@
 @media screen and (max-width: 1024px) {
   #menu {
     display: block;
-    margin: o 10px 0 auto;
+    margin: 0 10px 0 auto;
   }
 }
 
@@ -112,7 +112,7 @@ nav #link a {
 }
 
 nav #link a:hover {
-  color: white;
+  color: #fcba05;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
@@ -189,6 +189,29 @@ nav #link a:hover {
   letter-spacing: 5px;
   font-size: 26px;
   font-weight: 900;
+  color: #3a3a3a;
+}
+
+@-webkit-keyframes slider-food-name {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes slider-food-name {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+  }
+  100% {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 
 .food-name {
@@ -202,7 +225,6 @@ footer {
   background: #3a3a3a;
   padding: 60px 0;
   padding-top: 30px;
-  padding-left: 100px;
   text-align: center;
   -webkit-box-shadow: 0 5px 7px rgba(0, 0, 0, 0.5);
           box-shadow: 0 5px 7px rgba(0, 0, 0, 0.5);
@@ -213,8 +235,13 @@ footer {
 footer a {
   text-decoration: none;
   color: white;
-  padding: 20px 0;
   margin: auto 50px;
+}
+
+footer a:hover {
+  color: #fcba05;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 footer small {
