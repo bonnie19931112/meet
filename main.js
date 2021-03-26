@@ -1,6 +1,4 @@
-$(".carousel").carousel({
-    interval:2500
-})
+// ;
 
 
 $("#works").slick({
@@ -66,3 +64,20 @@ $("html").on("mousewheel", function () {
 
 var arrow = $("#arrow");
 arrow.fadeOut();
+
+$(window).scroll(function () { 
+    var windowTop = $(this).scrollTop();
+    console.log("視窗前上方" + windowTop);
+
+    var arrowTop = arrow.attr("data-st-top");
+    var arrowTime = arrow.attr("data-st-time");
+    var arrowTimeInt = parseInt(arrowTime);   //將文字轉為數字
+
+    console.log("箭頭出現位置:" + arrowTop);
+    console.log("箭頭特效時間" + arrowTime);
+
+    // 如果 視窗位置 大於等於箭頭上方 就 淡入
+    if (windowTop >= arrowTop) arrow.stop().fadeIn(arrowTimeInt);
+    // 否則 就 淡出
+    else arrow.fadeOut(arrowTimeInt);
+});
