@@ -225,6 +225,12 @@ nav #link a:hover {
   color: #3a3a3a;
 }
 
+.food-highlight {
+  font-size: 20px !important;
+  font-weight: 500px;
+  padding-top: 20px;
+}
+
 footer {
   background: #3a3a3a;
   padding: 60px 0;
@@ -270,7 +276,7 @@ footer small {
   width: 32px;
   height: 32px;
   position: fixed;
-  right: 30px;
+  right: 50px;
   bottom: 30px;
   z-index: 2;
   cursor: pointer;
@@ -291,7 +297,23 @@ footer small {
 
 #infosection h3 {
   font-size: 20px;
+  font-weight: 700;
   margin-bottom: 5px;
   color: #921717;
+}
+
+.carousel img {
+  width: 80vw !important;
+  height: 70vh !important;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding-top: 0px !important;
+}
+
+#index-img {
+  width: 100vw !important;
+  height: 30vh !important;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 /*# sourceMappingURL=style.css.map */

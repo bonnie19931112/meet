@@ -211,6 +211,12 @@ nav {
     color: $color-gray;
 }
 
+.food-highlight {
+    font-size: 20px !important;
+    font-weight: 500px;
+    padding-top: 20px;
+}
+
 // .container {
 //     img{
 //         cursor: pointer;
@@ -261,7 +267,7 @@ footer {
     width: 32px;
     height: 32px;
     position: fixed;
-    right: 30px;
+    right: 50px;
     bottom: 30px;
     z-index: 2;
     cursor: pointer;
@@ -279,9 +285,29 @@ footer {
     }
     h3 {
         font-size: 20px;
+        font-weight: 700;
         margin-bottom: 5px;
         color:rgb(146, 23, 23);
     }
     
 
 };
+
+.carousel img {
+    width: 80vw !important;
+    height: 70vh !important;
+    object-fit: cover;
+    padding-top: 0px !important;
+}
+
+
+#index-img {
+    width: 100vw !important;
+    height: 30vh !important;
+    object-fit: cover;
+  
+}
+
+// #index-type {
+//     padding-top: 100px;
+// }
