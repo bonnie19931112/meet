@@ -8,6 +8,10 @@
           box-sizing: border-box;
 }
 
+#carouselExampleIndicators {
+  padding-top: 200px;
+}
+
 #menu {
   background-image: url(./images/menu.png);
   width: 32px;

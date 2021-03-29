@@ -13,7 +13,10 @@ $mobile: 767px;           //手機尺寸
     font-family: 微軟正黑體;
     box-sizing: border-box;
 }
-
+// 首頁
+#carouselExampleIndicators {
+    padding-top: 200px;
+}
 //導覽列
 #menu {
     background-image: url(./images/menu.png);
